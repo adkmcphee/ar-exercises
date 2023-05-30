@@ -12,12 +12,10 @@ puts "----------"
 
 class Store < ActiveRecord::Base
   has_many :employees
-  # ...
 end
 
 class Employee < ActiveRecord::Base
   belongs_to :store
-
 end
 
 @store1.employees.create(first_name: "Adam", last_name: "McPhee", hourly_rate: 90)
